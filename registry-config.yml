@@ -20,4 +20,4 @@ reporting:
         verbose: true
 http:
     addr: :5000
-    secret: l8fZE2jd37olSiuBUaRSHYYzUa/617Sv8KEwOwTVx2I=
+    secret: HTTP_SECRET
