@@ -1,0 +1,21 @@
+version: 0.1
+log:
+    level: debug
+    formatter: text
+    fields:
+        service: registry
+        environment: ENVIRONMENT
+storage:
+    s3:
+        region: AWS_REGION
+        bucket: S3_BUCKET
+        secure: true
+        v4auth: true
+reporting:
+    newrelic:
+        licensekey: NR_TOKEN
+        name: registry
+        verbose: true
+http:
+    addr: localhost:5000
+    secret: l8fZE2jd37olSiuBUaRSHYYzUa/617Sv8KEwOwTVx2I=
