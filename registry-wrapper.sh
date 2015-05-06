@@ -5,6 +5,6 @@ sed -i "s/AWS_SECRET_KEY/$AWS_SECRET_KEY/g" /etc/registry/config.yml
 sed -i "s/AWS_REGION/$AWS_REGION/g" /etc/registry/config.yml
 sed -i "s/S3_BUCKET/$S3_BUCKET/g" /etc/registry/config.yml
 sed -i "s/NR_TOKEN/$NR_TOKEN/g" /etc/registry/config.yml
-HTTP_SECRET=$(curl consul:8500/v1/kv/registry/HTTP_SECRET\?raw)
+HTTP_SECRET=$(curl consul:8500/v1/kv/registry/config/HTTP_SECRET\?raw)
 sed -i "s/HTTP_SECRET/$HTTP_SECRET/g" /etc/registry/config.yml
 exec registry /etc/registry/config.yml
