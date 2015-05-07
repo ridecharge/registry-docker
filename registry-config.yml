@@ -21,3 +21,10 @@ reporting:
 http:
     addr: :5000
     secret: HTTP_SECRET
+redis:
+    addr: REDIS_ENDPOINT
+    password: REDIS_PASSWORD
+    pool:
+        maxidle: 16
+        maxactive: 64
+        idletimeout: 300s
