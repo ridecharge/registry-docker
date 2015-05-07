@@ -12,7 +12,9 @@ storage:
         region: AWS_REGION
         bucket: S3_BUCKET
         secure: true
-        v4auth: true
+        v4auth: true   
+    cache:
+        layerinfo: redis
 reporting:
     newrelic:
         licensekey: NR_TOKEN
